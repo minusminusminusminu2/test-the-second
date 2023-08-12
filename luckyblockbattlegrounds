@@ -23,6 +23,14 @@ Section:NewButton("Get Super Block", ".", function()
 game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
 end)
 
+Section:NewButton("Get All", ".", function()
+game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+end)
+
 Section:NewLabel("Scripts by Splitter#5204 on Discord, me for editing it")
 
 local Tab = Window:NewTab("Movement")
