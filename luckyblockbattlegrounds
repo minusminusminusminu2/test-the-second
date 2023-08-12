@@ -1,0 +1,37 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Lucky Block Battlegrounds [OP]", "Sentinel")
+local Tab = Window:NewTab("local")
+local Section = Tab:NewSection("Lucky Blocks")
+
+Section:NewButton("Get Lucky Block", ".", function()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+end)
+
+Section:NewButton("Get Rainbow Block", ".", function()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+end)
+
+Section:NewButton("Get Galaxy Block", ".", function()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+end)
+
+Section:NewButton("Get Diamond Block", ".", function()
+game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
+end)
+
+Section:NewButton("Get Super Block", ".", function()
+game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
+end)
+
+Section:NewLabel("Scripts by Splitter#5204 on Discord, me for editing it")
+
+local Tab = Window:NewTab("Movement")
+local Section = Tab:NewSection("Local")
+
+Section:NewSlider("Walk Speed", "walk speed range", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+Section:NewSlider("Jump Power", "jump power range", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
