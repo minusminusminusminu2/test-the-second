@@ -31,6 +31,15 @@ game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
 game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
 end)
 
+Section:NewButton("Experiment", ".", function()
+for i=1,1000 do
+game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
+end)
+
 Section:NewLabel("Scripts by Splitter#5204 on Discord, me for editing it")
 
 local Tab = Window:NewTab("Movement")
